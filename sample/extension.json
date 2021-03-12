@@ -1,0 +1,63 @@
+{
+  "displayName": "WBG Impact",
+  "name": "wbg-impact",
+  "platform": "mobile",
+  "version": "1.0.0",
+  "description": "For Nike Project",
+  "author": {
+    "name": "Abu"
+  },
+  "repositories": [
+    {
+      "className": "com.westpac.impact",
+      "artifact": "com.westpac.impact:impact:1.0.0"
+    },
+    {
+      "name": "myPod",
+      "headerName": "Media/ImpactExtension.h",
+      "interface": "ImpactExtension",
+      "version": "1.0.0"
+    }
+  ],
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "actions": [
+    {
+      "displayName": "SendData",
+      "name": "senddata",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "https://assets.adobedtm.com/activation/reactor/schemas/1.0/extension-definitions-mobile.json#/definitions/consequence"
+          }
+        ]
+      },
+      "viewPath": "actions/senddata.html"
+    }
+  ],
+  "dataElements": [
+    {
+      "displayName": "SomeData",
+      "name": "somedata",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "https://assets.adobedtm.com/activation/reactor/schemas/1.0/extension-definitions-mobile.json#/definitions/dataElement"
+          }
+        ]
+      },
+      "viewPath": "dataElements/somedata.html"
+    }
+  ]
+}

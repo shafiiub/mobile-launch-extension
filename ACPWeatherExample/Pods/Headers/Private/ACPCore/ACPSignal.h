@@ -1,0 +1,1 @@
+../../../ACPCore/ACPSignal.xcframework/ios-arm64_armv7_armv7s/Headers/ACPSignal.h

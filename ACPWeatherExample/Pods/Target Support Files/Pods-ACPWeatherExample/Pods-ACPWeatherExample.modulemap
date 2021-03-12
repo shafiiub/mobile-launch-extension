@@ -1,0 +1,6 @@
+framework module Pods_ACPWeatherExample {
+  umbrella header "Pods-ACPWeatherExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

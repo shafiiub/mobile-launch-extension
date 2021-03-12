@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/ACPCore/ACPCore-xcframeworks.sh
+${PODS_ROOT}/ACPCore/ACPCore.xcframework
+${PODS_ROOT}/ACPCore/ACPIdentity.xcframework
+${PODS_ROOT}/ACPCore/ACPLifecycle.xcframework
+${PODS_ROOT}/ACPCore/ACPSignal.xcframework
