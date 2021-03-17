@@ -54,8 +54,14 @@
     // Send an analytics track request with zip as context data. This will trigger the rule set up
     // in Launch UI for Mobile Core track action with context data key "zip" and the Weather extension
     // can process the rule consequence event
-    NSDictionary* contextData = @{@"zip" : zipString};
-    [ACPCore trackAction:@"getWeatherByTriggeringRules" data:contextData];
+//    NSDictionary* contextData = @{@"zip" : zipString,
+//                                  @"pageName" : @"Weather page"
+//    };
+    NSMutableDictionary * s_basicData = nil;
+    s_basicData = [NSMutableDictionary dictionary];
+    [s_basicData setObject:zipString forKey:@"zip"];
+    [s_basicData setObject:@"Weather page 15Mar21" forKey:@"pageName"];
+    [ACPCore trackAction:@"getWeatherByTriggeringRules" data:s_basicData];
 }
 
 @end

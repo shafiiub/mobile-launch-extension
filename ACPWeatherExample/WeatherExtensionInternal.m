@@ -204,6 +204,7 @@ static NSString* WEATHER_KEY = @"weather";
         }
         
         self.apiHandler.apiKey = configSharedState.count ? configSharedState[WEATHER_API_KEY] : @"";
+        [ACPCore log:ACPMobileLogLevelDebug tag:LOG_TAG message:[NSString stringWithFormat:@"%@ - value of weather.wbgauth", configSharedState[@"weather.wbgauth"] ]];
         
         // Identity is not a mandatory dependency for this event, just retrive mid
         [self extractMidFromIdentitySharedState:eventToProcess];
